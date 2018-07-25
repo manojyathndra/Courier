@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ADD EMPLOYEE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	h1{text-align:center;
+		font-family:courier;
+		font-weight:bold;
+		color:yellow;
+		background-color:blue;}
+			
+
+	.mySlides {
+		display:none;
+		width:2000px;
+		height:300px;}
+
+	td{
+		background-color:blue;
+		font-family:courier;
+		font-size:30px;
+		color:yellow;
+		}
+	a:link{
+		color:yellow;
+		text-decoration:none;
+		}
+
+	a:visited{
+		color:yellow;
+		}
+	
+	p{
+		font-size:20px;
+		text-align:left;
+		font-family:courier;
+		}
+
+	Input[type="text"],[type="date"]{
+		height: 40px;
+		width:300px;
+		font-size:18px;
+		margin-bottom:20px;
+		padding-left:30px;
+		font-family:courier;		
+		}
+
+	.btn{
+		padding: 15px 30px;
+		color:white;
+		border-radius:4px;
+		border:none;
+		background-color:blue;
+		}
+		
+	
+</style>
+</head>
+<body>
+
+<h1>FAST COURIER SERVICE</h1>
+
+
+<div>
+  <img class="mySlides" src="courier5.jpg"/>
+  <img class="mySlides" src="courier6.png"/>
+  <img class="mySlides" src="courier7.png"/>
+  <img class="mySlides" src="courier8.png"/>
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<table border="0.5px" cellpadding="10px" cellspacing="10px">
+<tr>
+<td><a href="Employee_home.html">HOME</a></td>
+<td><a href="Add_Employee.html">ADD EMPLOYEE</a></td>
+<td><a href="Add_Branch.html">ADD BRANCH</a></td>
+<td><a href="employeedetail.html">EMPLOYEE DETAILS</a>
+<td><a href="Courier.html">COURIER</a></td>
+<td><a href="display.html">DISPLAY</a></td>
+<td><a href="View_Feedback.html">VIEW FEEDBACK</a></td>
+</tr>
+</table>
+
+<div class="container"> <form action="employee.jsp" method="post">
+
+<h2>ADD EMPLOYEE</h2><br/>
+
+<div class="form-input"><p>EMPLOYEE NAME: </p><input type="text" name="ename" value="Employee Name"/></div>
+
+<div class="form-input"><p>EMPLOYEE ID : </p><input type="text" name="eid" value="Employee ID"/></div>
+
+<div class="form-input"><p>ADDRESS : </p><input type="text" name="address" value="Address" /></div>
+
+<div class="form-input"><p>PHONE : </p><input type="text" name="phone" value="Phone"/></div>
+
+<div class="form-input"><p>EMAIL ID : </p><input type="text" name="email" value="Email Id" /></div>
+
+<div class="form-input"><p>SALARY : </p><input type="text" name="salary" value="Salary"/></div>
+
+<div class="form-input"><p>POSITION : </p><input type="text" name="position" value="position"/></div>
+
+<div class="form-input"><p>BRANCH ID : </p><input type="text" name="bid" value="Branch ID"/></div>
+
+<input type="submit" name="submit" value="ADD EMPLOYEE" class="btn"/>
+
+</form></div>
+
+
+</body>
+</html>

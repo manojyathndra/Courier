@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FEEDBACK</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	h1{text-align:center;
+		font-family:courier;
+		font-weight:bold;
+		color:yellow;
+		background-color:blue;}
+			
+
+	.mySlides {
+		display:none;
+		width:2000px;
+		height:300px;}
+
+	td{
+		background-color:blue;
+		font-family:courier;
+		font-size:30px;
+		color:yellow;
+		}
+	a:link{
+		color:yellow;
+		text-decoration:none;
+		}
+
+	a:visited{
+		color:yellow;
+		}
+	
+	p{
+		font-size:20px;
+		text-align:left;
+		font-family:courier;
+		}
+
+	Input[type="text"]{
+		height: 40px;
+		width:300px;
+		font-size:18px;
+		margin-bottom:20px;
+		padding-left:30px;
+		font-family:courier;		
+		}
+
+	select{
+		height: 40px;
+		width:300px;
+		font-size:18px;
+		margin-bottom:20px;
+		padding-left:30px;
+		font-family:courier;		
+		}
+
+	textarea{
+		font-size:20px;
+		font-family:courier;	
+		}
+
+	.btn{
+		padding: 15px 30px;
+		color:white;
+		border-radius:4px;
+		border:none;
+		background-color:blue;
+		}
+		
+	
+</style>
+
+</head>
+<body>
+
+<h1>FAST COURIER SERVICE</h1>
+
+
+<div>
+  <img class="mySlides" src="courier5.jpg"/>
+  <img class="mySlides" src="courier6.png"/>
+  <img class="mySlides" src="courier7.png"/>
+  <img class="mySlides" src="courier8.png"/>
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<table border="0.5px" cellpadding="10px" cellspacing="10px">
+<tr>
+<td><a href="Home.html">HOME</a></td>
+<td><a href="Pickup.html">PICKUP REQUEST</a></td>
+<td><a href="yourcourier.html">YOUR COURIER</a></td>
+<td><a href="viewbranch.html">VIEW BRANCH</a></td>
+<td><a href="pricelist.html">PRICE</a></td>
+<td><a href="feedback.html">FEEDBACK</a></td>
+<td><a href="logout.html">LOG OUT</a></td>
+</tr>
+</table>
+
+<div class="container"> <form action="feedback.jsp" method="post">
+
+<h2>FEEDBACK</h2><br/>
+
+<div class="form-input"><p>FEEDBACK ID: </p><input type="text" name="feedbackid"  value="EX:usernamef001"/></div>
+
+<p>*Username and Followed by "F" Your FEEDBACK NO</p>
+
+<div class="form-input"><p>USERNAME: </p><input type="text" name="username"  value="Username"/></div>
+
+<div class="form-input"><p>WRITE FEEDBACK: </p><input type="text" name="fb"  value="Feedback"/></div>
+
+
+<div class="form-input"><p>RATING: </p><input type="text" name="rating"  value="Rating"/></div>
+
+<p>*Rate out of 5</p>
+
+<input type="submit" name="submit" value="SEND FEEDBACK" class="btn"/>
+
+</form></div>
+
+</body>
+</html>
