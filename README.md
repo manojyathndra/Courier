@@ -3,16 +3,14 @@ Hey Everyone!!
 
 Myself Manoj Yathindra T S Student From SDMIT.
 
-This is my first basic project this may alreay available in market
-but i done this project from scratch by deep learning of the programing Langauge
+This is my first basic project this may already be available in market
+but I did this project from scratch by deep learning of the programing Langauge
 
-i like to share all the code of my first project by analysing it please help me 
-to improve in coding n to impliment many more project like this.
+I like to share all the code of my first project by analyzing it please help me 
+to improve in coding and to implement many more projects like this.
 
-This courier management is a web page with database i designed this page by 
-doing a small research about Courier sevices 
+This courier management is a web page with a database I designed this page by 
+doing small research about Courier services 
 
-this is the basic web page there may be flawed or enhancement to be made
-but this can be used for local courier service with low cost..
-
-                thankyou,
+this is the basic web page there may be flaws or enhancements to be made
+but this can be used for local courier service at a low cost.
